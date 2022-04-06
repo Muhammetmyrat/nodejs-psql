@@ -1,5 +1,3 @@
-CREATE ROLE test LOGIN SUPERUSER  PASSWORD '1234';
-
 SET client_encoding TO 'UTF-8';
 
 create table person(

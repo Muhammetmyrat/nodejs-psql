@@ -4,10 +4,10 @@ class userControllers {
 
 	async createUser(req, res) {
 		const {first_name, last_name, email} = req.body
-		const newUser = await db.query(`insert into person(first_name, last_name, email) values (${1}, ${2}, ${3}) returning *	`, [first_name, last_name, email])
+		const newUser = await db.query(`insert into person(first_name, last_name, email) values ($1, $2, $3) returning *	`, [first_name, last_name, email])
 		res.json({
 			status: 200,
-			data: newUser.rows
+			data: newUser.rows[0]
 		})
 	}
 	async getUsers(req, res) {

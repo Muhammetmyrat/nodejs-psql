@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const userRoutes = require('./routes/user.routes')
 
-const PORT = process.env.PORT || 8000
+const PORT = process.env.PORT || 3001
 
 app.use(express.json())
 app.use('/api', userRoutes)
