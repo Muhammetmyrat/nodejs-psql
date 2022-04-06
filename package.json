@@ -1,0 +1,16 @@
+{
+  "name": "node-psql",
+  "version": "1.0.0",
+  "description": "for test learning",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "node",
+    "nodejd",
+    "psql"
+  ],
+  "author": "Muhammetmyrat",
+  "license": "ISC"
+}
